@@ -316,7 +316,7 @@ h1 {
 }
 
 .ai-graphic::after {
-  background: radial-gradient(circle, rgba(20, 110, 245, 0.2), transparent 64%);
+  background: radial-gradient(circle, rgba(20, 110, 245, 0.12), transparent 66%);
   content: "";
   filter: blur(28px);
   height: 48%;
@@ -326,57 +326,8 @@ h1 {
   width: 48%;
 }
 
-.ai-brain-core {
-  background: linear-gradient(145deg, #146ef5, #65a4ff);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 34% 34% 42% 42%;
-  box-shadow: 0 28px 80px rgba(20, 110, 245, 0.32);
-  height: clamp(150px, 20vw, 240px);
-  left: 50%;
-  position: absolute;
-  top: 48%;
-  transform: translate(-50%, -50%);
-  width: clamp(180px, 24vw, 280px);
-  z-index: 3;
-}
-
-.brain-left,
-.brain-right {
-  background:
-    radial-gradient(circle at 34% 30%, rgba(255, 255, 255, 0.95) 0 11%, transparent 12%),
-    radial-gradient(circle at 58% 28%, rgba(255, 255, 255, 0.85) 0 9%, transparent 10%),
-    radial-gradient(circle at 42% 58%, rgba(255, 255, 255, 0.8) 0 10%, transparent 11%),
-    rgba(255, 255, 255, 0.18);
-  border: 1px solid rgba(255, 255, 255, 0.48);
-  border-radius: 48% 44% 46% 42%;
-  height: 70%;
-  position: absolute;
-  top: 16%;
-  width: 43%;
-}
-
-.brain-left {
-  left: 9%;
-}
-
-.brain-right {
-  right: 9%;
-  transform: scaleX(-1);
-}
-
-.brain-stem {
-  background: rgba(255, 255, 255, 0.42);
-  border-radius: 999px;
-  bottom: 14%;
-  height: 38%;
-  left: 50%;
-  position: absolute;
-  transform: translateX(-50%);
-  width: 8px;
-}
-
 .orbit {
-  border: 1px solid rgba(20, 110, 245, 0.32);
+  border: 1px solid rgba(20, 110, 245, 0.42);
   border-radius: 50%;
   height: clamp(240px, 35vw, 440px);
   left: 50%;
@@ -387,7 +338,23 @@ h1 {
   z-index: 2;
 }
 
+.orbit::before,
+.orbit::after {
+  background: linear-gradient(90deg, transparent, rgba(20, 110, 245, 0.18), transparent);
+  content: "";
+  height: 1px;
+  left: 10%;
+  position: absolute;
+  right: 10%;
+  top: 50%;
+}
+
+.orbit::after {
+  transform: rotate(90deg);
+}
+
 .orbit span {
+  animation: dotTravel 13s linear infinite;
   background: var(--blue);
   border-radius: 50%;
   box-shadow: 0 0 24px rgba(20, 110, 245, 0.8);
@@ -395,68 +362,55 @@ h1 {
   height: 12px;
   left: 50%;
   position: absolute;
-  top: -6px;
+  offset-distance: 0%;
+  offset-path: ellipse(50% 50% at 50% 50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 12px;
 }
 
-.orbit-one {
-  animation: orbitSpin 16s linear infinite;
+.orbit i {
+  animation: dotTravel 18s linear infinite reverse;
+  background: rgba(20, 110, 245, 0.7);
+  border-radius: 50%;
+  box-shadow: 0 0 16px rgba(20, 110, 245, 0.58);
+  display: block;
+  height: 7px;
+  left: 50%;
+  offset-distance: 45%;
+  offset-path: ellipse(50% 50% at 50% 50%);
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 7px;
 }
 
 .orbit-two {
-  animation: orbitSpin 22s linear infinite reverse;
   height: clamp(290px, 42vw, 520px);
   transform: translate(-50%, -50%) rotate(58deg);
   width: clamp(160px, 26vw, 330px);
 }
 
+.orbit-two span {
+  animation-duration: 17s;
+}
+
+.orbit-two i {
+  animation-duration: 21s;
+}
+
 .orbit-three {
-  animation: orbitSpin 28s linear infinite;
   height: clamp(180px, 28vw, 360px);
   transform: translate(-50%, -50%) rotate(-38deg);
   width: clamp(330px, 48vw, 580px);
 }
 
-.ai-card {
-  align-items: center;
-  background: rgba(255, 255, 255, 0.76);
-  backdrop-filter: blur(16px);
-  border: 1px solid rgba(207, 226, 255, 0.9);
-  border-radius: var(--radius);
-  box-shadow: 0 14px 34px rgba(20, 110, 245, 0.12);
-  color: var(--ink);
-  display: inline-flex;
-  gap: 9px;
-  padding: 11px 13px;
-  position: absolute;
-  z-index: 4;
+.orbit-three span {
+  animation-duration: 20s;
 }
 
-.ai-card span {
-  background: var(--blue);
-  border-radius: 50%;
-  height: 9px;
-  width: 9px;
-}
-
-.ai-card strong {
-  font-size: 0.88rem;
-  font-weight: 600;
-}
-
-.ai-card-one {
-  left: 8%;
-  top: 22%;
-}
-
-.ai-card-two {
-  right: 10%;
-  top: 30%;
-}
-
-.ai-card-three {
-  bottom: 18%;
-  left: 18%;
+.orbit-three i {
+  animation-duration: 24s;
 }
 
 .signal-line {
@@ -480,6 +434,43 @@ h1 {
   bottom: 31%;
   right: 9%;
   transform: rotate(-22deg);
+}
+
+.ai-node {
+  animation: nodePulse 2400ms ease-in-out infinite;
+  background: white;
+  border: 2px solid rgba(20, 110, 245, 0.72);
+  border-radius: 50%;
+  box-shadow: 0 0 22px rgba(20, 110, 245, 0.34);
+  height: 14px;
+  position: absolute;
+  width: 14px;
+  z-index: 3;
+}
+
+.ai-node::after {
+  background: var(--blue);
+  border-radius: 50%;
+  content: "";
+  inset: 3px;
+  position: absolute;
+}
+
+.node-one {
+  left: 31%;
+  top: 34%;
+}
+
+.node-two {
+  right: 29%;
+  top: 42%;
+  animation-delay: 500ms;
+}
+
+.node-three {
+  bottom: 29%;
+  left: 46%;
+  animation-delay: 1000ms;
 }
 
 .section {
@@ -529,7 +520,7 @@ h1 {
 }
 
 .intro-band {
-  align-items: start;
+  align-items: center;
   background: var(--graphite);
   color: white;
   display: grid;
@@ -1438,9 +1429,9 @@ textarea:focus {
   font-weight: 400;
 }
 
-@keyframes orbitSpin {
+@keyframes dotTravel {
   to {
-    rotate: 360deg;
+    offset-distance: 100%;
   }
 }
 
@@ -1454,6 +1445,19 @@ textarea:focus {
   50% {
     opacity: 1;
     scale: 1.08 1;
+  }
+}
+
+@keyframes nodePulse {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(0.9);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.12);
   }
 }
 

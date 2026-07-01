@@ -26,32 +26,21 @@ export function FloatingHeroMedia() {
       }
     >
       <div className="ai-graphic" aria-label="Animated AI website workflow graphic" role="img">
-        <div className="ai-brain-core">
-          <div className="brain-left" />
-          <div className="brain-right" />
-          <div className="brain-stem" />
-        </div>
         <div className="orbit orbit-one">
           <span />
+          <i />
         </div>
         <div className="orbit orbit-two">
           <span />
+          <i />
         </div>
         <div className="orbit orbit-three">
           <span />
+          <i />
         </div>
-        <div className="ai-card ai-card-one">
-          <span />
-          <strong>Structure</strong>
-        </div>
-        <div className="ai-card ai-card-two">
-          <span />
-          <strong>Copy</strong>
-        </div>
-        <div className="ai-card ai-card-three">
-          <span />
-          <strong>Launch</strong>
-        </div>
+        <div className="ai-node node-one" />
+        <div className="ai-node node-two" />
+        <div className="ai-node node-three" />
         <div className="signal-line signal-one" />
         <div className="signal-line signal-two" />
       </div>
