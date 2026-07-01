@@ -10,7 +10,10 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Webara | AI Website Creation",
-  description: "Webara builds modern websites with artificial intelligence, design, and human strategy."
+  description: "Webara builds modern websites with artificial intelligence, design, and human strategy.",
+  icons: {
+    icon: "/favicon.svg"
+  }
 };
 
 export default function RootLayout({

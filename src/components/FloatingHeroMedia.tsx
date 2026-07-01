@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import type { CSSProperties } from "react";
 import { useState } from "react";
 
@@ -26,13 +25,36 @@ export function FloatingHeroMedia() {
         } as CSSProperties & Record<string, string>
       }
     >
-      <Image
-        src="/assets/hero-ai-workflow.png"
-        alt="AI workflow for creating a modern website on a laptop and phone"
-        fill
-        priority
-        sizes="(max-width: 900px) 100vw, 48vw"
-      />
+      <div className="ai-graphic" aria-label="Animated AI website workflow graphic" role="img">
+        <div className="ai-brain-core">
+          <div className="brain-left" />
+          <div className="brain-right" />
+          <div className="brain-stem" />
+        </div>
+        <div className="orbit orbit-one">
+          <span />
+        </div>
+        <div className="orbit orbit-two">
+          <span />
+        </div>
+        <div className="orbit orbit-three">
+          <span />
+        </div>
+        <div className="ai-card ai-card-one">
+          <span />
+          <strong>Structure</strong>
+        </div>
+        <div className="ai-card ai-card-two">
+          <span />
+          <strong>Copy</strong>
+        </div>
+        <div className="ai-card ai-card-three">
+          <span />
+          <strong>Launch</strong>
+        </div>
+        <div className="signal-line signal-one" />
+        <div className="signal-line signal-two" />
+      </div>
     </div>
   );
 }
