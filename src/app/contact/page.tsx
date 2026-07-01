@@ -2,6 +2,7 @@ import { ContactSection } from "@/components/MarketingSections";
 import { ContactForm } from "@/components/ContactForm";
 import { PageHero, SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import { getSiteContent } from "@/lib/content";
+import { Building2, Mail, MapPin, Phone } from "lucide-react";
 
 export default async function ContactPage() {
   const content = await getSiteContent();
@@ -26,9 +27,44 @@ export default async function ContactPage() {
           <ContactForm />
         </div>
         <div className="map-panel">
-          <span className="section-kicker">Location</span>
-          <h2>{content.brand.legalName}</h2>
-          <p>{content.brand.address}</p>
+          <span className="section-kicker">Contact details</span>
+          <h2>Webara information</h2>
+          <p>
+            Reach out by email, phone, or use the address below if you need company
+            and location details.
+          </p>
+          <div className="contact-info-grid">
+            <article>
+              <Building2 size={20} />
+              <div>
+                <span>Company</span>
+                <strong>{content.brand.legalName}</strong>
+              </div>
+            </article>
+            <article>
+              <Mail size={20} />
+              <div>
+                <span>Email</span>
+                <a href={`mailto:${content.brand.email}`}>{content.brand.email}</a>
+              </div>
+            </article>
+            <article>
+              <Phone size={20} />
+              <div>
+                <span>Phone</span>
+                <a href={`tel:${content.brand.phone.replace(/\s/g, "")}`}>
+                  {content.brand.phone}
+                </a>
+              </div>
+            </article>
+            <article>
+              <MapPin size={20} />
+              <div>
+                <span>Address</span>
+                <strong>{content.brand.address}</strong>
+              </div>
+            </article>
+          </div>
           <iframe
             title="Webara location map"
             src={`https://www.google.com/maps?q=${encodeURIComponent(content.brand.address)}&output=embed`}

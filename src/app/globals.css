@@ -957,10 +957,10 @@ details p {
 }
 
 .contact-page-grid {
-  align-items: start;
+  align-items: stretch;
   display: grid;
   gap: 18px;
-  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .contact-form-panel,
@@ -969,6 +969,9 @@ details p {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: 0 12px 40px rgba(18, 23, 21, 0.06);
+  display: flex;
+  flex-direction: column;
+  min-height: 720px;
   padding: clamp(22px, 4vw, 34px);
 }
 
@@ -987,12 +990,65 @@ details p {
 
 .contact-form {
   display: grid;
-  gap: 14px;
+  gap: 18px;
   margin-top: 22px;
+}
+
+.contact-form input {
+  min-height: 58px;
+}
+
+.contact-form textarea {
+  min-height: 190px;
+}
+
+.contact-form .primary-button {
+  min-height: 58px;
 }
 
 .contact-form .primary-button {
   justify-content: center;
+}
+
+.contact-info-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 22px;
+}
+
+.contact-info-grid article {
+  align-items: flex-start;
+  background: #f7faf8;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  display: flex;
+  gap: 12px;
+  padding: 14px;
+}
+
+.contact-info-grid svg {
+  color: var(--blue);
+  flex: 0 0 auto;
+  margin-top: 2px;
+}
+
+.contact-info-grid span {
+  color: var(--muted);
+  display: block;
+  font-size: 0.82rem;
+  margin-bottom: 4px;
+}
+
+.contact-info-grid strong,
+.contact-info-grid a {
+  color: var(--ink);
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.contact-info-grid a:hover {
+  color: var(--blue);
 }
 
 .form-success {
@@ -1009,7 +1065,8 @@ details p {
   border: 0;
   border-radius: var(--radius);
   display: block;
-  height: 440px;
+  flex: 1;
+  min-height: 320px;
   margin-top: 22px;
   width: 100%;
 }
@@ -1518,6 +1575,15 @@ textarea:focus {
 
   .page-link-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact-form-panel,
+  .map-panel {
+    min-height: auto;
+  }
+
+  .contact-info-grid {
+    grid-template-columns: 1fr;
   }
 
   .footer-main {
