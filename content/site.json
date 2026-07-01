@@ -1,0 +1,135 @@
+{
+  "brand": {
+    "name": "Webara",
+    "legalName": "Webara PR",
+    "tagline": "AI website creation for businesses that want to reach clients faster",
+    "email": "office@webara.site",
+    "phone": "+381 60 374 4946",
+    "address": "Stanislava Majorosa 47, 21000 Novi Sad, Serbia"
+  },
+  "hero": {
+    "eyebrow": "AI web studio",
+    "title": "A website for your business, built faster with artificial intelligence",
+    "subtitle": "Webara combines AI, design, and human strategy to create a modern website that explains your offer clearly, loads quickly, and turns visitors into inquiries.",
+    "primaryCta": "Book a consultation",
+    "secondaryCta": "View packages"
+  },
+  "stats": [
+    {
+      "value": "7-14",
+      "label": "days to the first version"
+    },
+    {
+      "value": "100%",
+      "label": "responsive design"
+    },
+    {
+      "value": "AI + human",
+      "label": "speed without a generic look"
+    }
+  ],
+  "about": {
+    "kicker": "About",
+    "title": "Human direction for AI-made websites",
+    "name": "Sandra Lukic",
+    "role": "Owner",
+    "description": "Sandra shapes the Webara process around clarity, speed, and taste. AI helps move faster, but every website still needs a person who understands the business, edits the message, and turns raw ideas into a polished digital presence.",
+    "ownerNote": "I built Webara for business owners who want technology to feel useful, not overwhelming. The goal is simple: use AI where it saves time, and use human judgment where it creates trust.",
+    "signature": "Sandra Lukic",
+    "image": "/assets/sandra-lukic-about.png"
+  },
+  "services": [
+    {
+      "title": "Business website design",
+      "description": "Presentation websites for companies, local shops, clinics, salons, contractors, and consultants."
+    },
+    {
+      "title": "AI copy and structure",
+      "description": "We quickly shape your message, sections, FAQ, and SEO foundation for your industry."
+    },
+    {
+      "title": "Campaign landing pages",
+      "description": "Focused pages for a single offer, Google Ads, Meta campaigns, or a new service launch."
+    },
+    {
+      "title": "Maintenance and improvements",
+      "description": "Updates, new sections, blog content, analytics, and optimization after launch."
+    }
+  ],
+  "process": [
+    {
+      "title": "Discovery and goal",
+      "description": "We define your audience, offer, and what the website needs to achieve."
+    },
+    {
+      "title": "AI draft",
+      "description": "AI helps us quickly create the structure, copy, and first section ideas."
+    },
+    {
+      "title": "Design and build",
+      "description": "We refine the visual design, page flow, mobile layout, SEO, and performance by hand."
+    },
+    {
+      "title": "Launch and support",
+      "description": "We connect the domain, forms, analytics, and stay available as the site grows."
+    }
+  ],
+  "packages": [
+    {
+      "name": "Start",
+      "price": "from EUR 390",
+      "description": "A simple website for a fast online presence.",
+      "features": [
+        "Up to 5 sections",
+        "Mobile version",
+        "Contact form",
+        "Basic SEO"
+      ]
+    },
+    {
+      "name": "Pro",
+      "price": "from EUR 790",
+      "description": "A complete business website for a stronger online presence.",
+      "features": [
+        "Multiple pages",
+        "SEO structure",
+        "Google map",
+        "Fast updates through admin"
+      ]
+    },
+    {
+      "name": "Growth",
+      "price": "custom quote",
+      "description": "A website that grows with your marketing and automation needs.",
+      "features": [
+        "Blog or landing pages",
+        "AI chatbot option",
+        "Analytics",
+        "Monthly support"
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "How long does it take to build a website?",
+      "answer": "The first version usually arrives within 7 to 14 days, depending on the scope and how quickly materials are provided."
+    },
+    {
+      "question": "Is this just an AI website generator?",
+      "answer": "No. We use AI to speed up research, structure, and copy, but the final design, logic, and quality are shaped by a human team."
+    },
+    {
+      "question": "Can I change the text myself?",
+      "answer": "Yes. This website includes a small AI-style admin panel for editing the main content."
+    },
+    {
+      "question": "Can you help with domain and hosting?",
+      "answer": "Yes. We can connect the domain, hosting, email forms, and basic analytics."
+    }
+  ],
+  "cta": {
+    "title": "Have an idea for a website?",
+    "description": "Send us a short note about your business and what you want the website to achieve. Webara will suggest the structure, timeline, and best package.",
+    "button": "Send an inquiry"
+  }
+}

@@ -1,0 +1,10 @@
+.next
+node_modules
+.env
+.env.local
+dist
+*.log
+.vercel
+.env*
+.webara-admin-password
+supabase/.temp
