@@ -36,6 +36,7 @@ export function ScrollReveal() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("is-visible");
+            entry.target.classList.add("bg-loaded");
             observer.unobserve(entry.target);
           }
         });

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120" role="img" aria-label="Webara">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#146EF5" d="M58 22c-13.255 0-24 10.745-24 24 0 2.377.346 4.672.99 6.84C26.574 57.2 21 65.99 21 76c0 14.36 11.64 26 26 26h19V22h-8Zm31 0h-7v80h19c14.36 0 26-11.64 26-26 0-10.01-5.574-18.8-13.99-23.16A24.055 24.055 0 0 0 113 46c0-13.255-10.745-24-24-24Z"/>
+    <path stroke="#FFF" stroke-linecap="round" stroke-width="7" d="M54 48c-7 0-12.5 5.5-12.5 12.5M65 71c-9 0-16 7-16 16M94 48c7 0 12.5 5.5 12.5 12.5M83 71c9 0 16 7 16 16M74 29v70"/>
+    <text x="150" y="76" fill="#121715" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="600" letter-spacing="0">Webara</text>
+  </g>
+</svg>

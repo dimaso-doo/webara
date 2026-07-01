@@ -903,7 +903,7 @@ details p {
   align-items: center;
   background:
     linear-gradient(90deg, rgba(7, 12, 20, 0.88), rgba(7, 12, 20, 0.62)),
-    url("/assets/cta-ai-background.png") center / cover;
+    linear-gradient(135deg, #0a1323, #102b58);
   color: white;
   display: grid;
   gap: clamp(24px, 5vw, 68px);
@@ -911,6 +911,12 @@ details p {
   min-height: clamp(420px, 52vw, 620px);
   margin: 0;
   padding: clamp(58px, 8vw, 112px) var(--grid-pad);
+}
+
+.final-cta.bg-loaded {
+  background:
+    linear-gradient(90deg, rgba(7, 12, 20, 0.88), rgba(7, 12, 20, 0.62)),
+    url("/assets/optimized/cta-ai-background.jpg") center / cover;
 }
 
 .final-cta p {

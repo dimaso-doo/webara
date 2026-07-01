@@ -12,7 +12,7 @@ export default async function FaqPage() {
         kicker="FAQ"
         title="Common questions before we start"
         description="Quick answers about timelines, AI involvement, content updates, domain setup, and hosting support."
-        image="/assets/page-headers/faq.png"
+        image="/assets/optimized/page-headers/faq.jpg"
       />
       <FaqSection content={content} />
       <ContactSection content={content} />

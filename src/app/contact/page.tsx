@@ -13,7 +13,7 @@ export default async function ContactPage() {
         kicker="Contact"
         title="Start a website conversation"
         description="Send Webara a short note about your business, goals, and what the website needs to achieve."
-        image="/assets/page-headers/contact.png"
+        image="/assets/optimized/page-headers/contact.jpg"
       />
       <section className="section contact-page-grid">
         <div className="contact-form-panel">

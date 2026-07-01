@@ -12,7 +12,7 @@ export default async function PackagesPage() {
         kicker="Packages"
         title="Packages for different growth stages"
         description="Choose a starting point based on how much structure, content, and ongoing support your business needs."
-        image="/assets/page-headers/packages.png"
+        image="/assets/optimized/page-headers/packages.jpg"
       />
       <PackagesSection content={content} />
       <ContactSection content={content} />

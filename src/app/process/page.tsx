@@ -12,7 +12,7 @@ export default async function ProcessPage() {
         kicker="Process"
         title="A clear path from idea to launch"
         description="A simple workflow that keeps strategy, AI speed, design, build quality, and support connected."
-        image="/assets/page-headers/process.png"
+        image="/assets/optimized/page-headers/process.jpg"
       />
       <ProcessSection content={content} />
       <ContactSection content={content} />

@@ -9,7 +9,7 @@ export function SiteHeader({ content }: { content: SiteContent }) {
     <header className="site-header">
       <a className="brand-mark" href="/" aria-label="Webara home">
         <Image
-          src="/assets/webara-logo-transparent.png"
+          src="/assets/webara-logo.svg"
           alt={content.brand.name}
           width={144}
           height={72}
@@ -33,7 +33,7 @@ export function SiteFooter({ content }: { content: SiteContent }) {
         <div className="footer-brand">
           <a className="brand-mark footer-logo" href="/" aria-label="Webara home">
             <Image
-              src="/assets/webara-logo-transparent.png"
+              src="/assets/webara-logo.svg"
               alt={content.brand.name}
               width={154}
               height={77}

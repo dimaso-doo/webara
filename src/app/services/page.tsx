@@ -12,7 +12,7 @@ export default async function ServicesPage() {
         kicker="Services"
         title="AI-assisted website services"
         description="Focused website design, copy, landing pages, and improvements for businesses that need a better online presence."
-        image="/assets/page-headers/services.png"
+        image="/assets/optimized/page-headers/services.jpg"
       />
       <ServicesSection content={content} />
       <ContactSection content={content} />

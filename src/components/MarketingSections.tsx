@@ -165,7 +165,7 @@ export function FaqSection({ content }: { content: SiteContent }) {
 
 export function ContactSection({ content }: { content: SiteContent }) {
   return (
-    <section className="final-cta" id="contact">
+    <section className="final-cta lazy-bg" id="contact">
       <div>
         <span className="section-kicker">Contact</span>
         <h2>{content.cta.title}</h2>
