@@ -279,14 +279,12 @@ h1 {
 
 .hero-media {
   align-self: stretch;
-  background:
-    radial-gradient(circle at 50% 45%, rgba(20, 110, 245, 0.2), transparent 32%),
-    linear-gradient(145deg, #ffffff, #eef5ff);
-  border: 1px solid rgba(223, 231, 226, 0.86);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
   min-height: 460px;
-  overflow: hidden;
+  overflow: visible;
   position: relative;
 }
 
@@ -296,29 +294,29 @@ h1 {
 }
 
 .floating-hero:hover {
-  box-shadow: 0 30px 90px rgba(20, 110, 245, 0.18);
+  box-shadow: none;
 }
 
 .ai-graphic {
   height: 100%;
   min-height: inherit;
-  overflow: hidden;
+  overflow: visible;
   position: relative;
 }
 
 .ai-graphic::before {
   background:
-    linear-gradient(90deg, rgba(20, 110, 245, 0.08) 1px, transparent 1px),
-    linear-gradient(0deg, rgba(20, 110, 245, 0.08) 1px, transparent 1px);
+    linear-gradient(90deg, rgba(20, 110, 245, 0.06) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(20, 110, 245, 0.06) 1px, transparent 1px);
   background-size: 34px 34px;
   content: "";
   inset: 0;
-  mask-image: radial-gradient(circle at center, black 0%, transparent 72%);
+  mask-image: radial-gradient(circle at center, black 0%, transparent 62%);
   position: absolute;
 }
 
 .ai-graphic::after {
-  background: radial-gradient(circle, rgba(20, 110, 245, 0.32), transparent 62%);
+  background: radial-gradient(circle, rgba(20, 110, 245, 0.2), transparent 64%);
   content: "";
   filter: blur(28px);
   height: 48%;
