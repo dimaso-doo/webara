@@ -1,5 +1,21 @@
 # Webara
 
+## Live product
+
+https://www.webara.site
+
+## Product
+
+Webara is a full-stack web platform with responsive public journeys, protected administration, structured content, API routes and production deployment.
+
+## My role
+
+I defined the product structure and UX/UI, directed AI-assisted implementation, reviewed the protected administration and content workflow, tested the complete product and managed deployment.
+
+## Stack
+
+Next.js, React, TypeScript, Supabase-ready storage and Vercel.
+
 Next.js website for Webara with a small AI-style admin panel for editing content.
 
 ## Technologies
